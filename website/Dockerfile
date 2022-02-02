@@ -5,4 +5,4 @@ RUN apt-get install -y php apache2
 #RUN a2enmod rewrite
 COPY . /var/www/html/
 #sudo chmod -R 775 /var/www/html/
-CMD ["start-apache"]
+#CMD ["start-apache"]
