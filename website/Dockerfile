@@ -4,7 +4,6 @@ RUN apt-get install -y php apache2
 RUN rm -rf /var/www/html/index.html
 COPY . /var/www/html/
 EXPOSE 80
-ENTRYPOINT ["/usr/sbin/apachectl"]
-CMD ["-D", "FOREGROUND"]
+CMD ["apachectl", "-D", "FOREGROUND"]
 
 
